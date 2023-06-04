@@ -11,6 +11,7 @@
 		F8555B1C2A2CE94E003BB835 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8555B1B2A2CE94E003BB835 /* ContentView.swift */; };
 		F8555B1E2A2CE94F003BB835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8555B1D2A2CE94F003BB835 /* Assets.xcassets */; };
 		F8555B212A2CE94F003BB835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8555B202A2CE94F003BB835 /* Preview Assets.xcassets */; };
+		F8555B292A2CF9F9003BB835 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8555B282A2CF9F9003BB835 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		F8555B1B2A2CE94E003BB835 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F8555B1D2A2CE94F003BB835 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8555B202A2CE94F003BB835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8555B282A2CF9F9003BB835 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		F8555B182A2CE94E003BB835 /* Tic-Tac-Toe */ = {
 			isa = PBXGroup;
 			children = (
+				F8555B272A2CF9E5003BB835 /* Tools */,
 				F8555B192A2CE94E003BB835 /* Tic_Tac_ToeApp.swift */,
 				F8555B1B2A2CE94E003BB835 /* ContentView.swift */,
 				F8555B1D2A2CE94F003BB835 /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				F8555B202A2CE94F003BB835 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8555B272A2CF9E5003BB835 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F8555B282A2CF9F9003BB835 /* Colors.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8555B1C2A2CE94E003BB835 /* ContentView.swift in Sources */,
+				F8555B292A2CF9F9003BB835 /* Colors.swift in Sources */,
 				F8555B1A2A2CE94E003BB835 /* Tic_Tac_ToeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
