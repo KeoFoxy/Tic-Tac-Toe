@@ -15,6 +15,7 @@ struct ContentView: View {
     
     @State private var moves: [Move?] = Array(repeating: nil, count: 9)
     @State private var isGameboardDisabled: Bool = false
+    @State private var alertItem: AlertItem?
     
     var body: some View {
         VStack {
@@ -34,13 +35,34 @@ struct ContentView: View {
                     .onTapGesture {
                         if isSquareOccupied(in: moves, forIndex: i) { return }
                         moves[i] = Move(player: .human, boardIndex: i)
-                        isGameboardDisabled = true
                         
                             //Check for WIN or DRAW
+                        if checkWinCondition(for: .human, in: moves) {
+                            alertItem = AlertContext.humanWin
+                            return
+                        }
+                        
+                        if checkDrawCondition(in: moves) {
+                            alertItem = AlertContext.draw
+                            return
+                        }
+                        
+                        isGameboardDisabled = true
+                        
                         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                             let AIPositon = determineAIMovePosition(in: moves)
                             moves[AIPositon] = Move(player: .AI, boardIndex: AIPositon)
                             isGameboardDisabled = false
+                            
+                            if checkWinCondition(for: .AI, in: moves) {
+                                alertItem = AlertContext.AIWin
+                                return
+                            }
+                            
+                            if checkDrawCondition(in: moves) {
+                                alertItem = AlertContext.draw
+                                return
+                            }
                         }
                     }
                 }
@@ -48,6 +70,11 @@ struct ContentView: View {
         }
         .disabled(isGameboardDisabled)
         .padding()
+        .alert(item: $alertItem, content: { alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: .default(alertItem.buttonTitle, action: { resetGame() }))
+        })
     }
     
     func isSquareOccupied(in moves: [Move?], forIndex index: Int) -> Bool {
@@ -62,6 +89,24 @@ struct ContentView: View {
         }
         
         return movePositon
+    }
+    
+    func checkWinCondition(for player: Player, in moves: [Move?]) -> Bool {
+        let winPatterns: Set<Set<Int>> = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
+        let playerMoves = moves.compactMap { $0 }.filter { $0.player == player }
+        let playerPositions = Set(playerMoves.map { $0.boardIndex } )
+        
+        for pattern in winPatterns where pattern.isSubset(of: playerPositions){ return true }
+        
+        return false
+    }
+    
+    func checkDrawCondition(in moves: [Move?]) -> Bool {
+        return moves.compactMap { $0 }.count == 9
+    }
+    
+    func resetGame() {
+        moves = Array(repeating: nil, count: 9)
     }
 }
 
