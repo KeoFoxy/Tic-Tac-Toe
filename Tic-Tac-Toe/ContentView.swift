@@ -14,7 +14,7 @@ struct ContentView: View {
                                GridItem(.flexible())]
     
     @State private var moves: [Move?] = Array(repeating: nil, count: 9)
-    @State private var isHumansTurn: Bool = true
+    @State private var isGameboardDisabled: Bool = false
     
     var body: some View {
         VStack {
@@ -33,13 +33,20 @@ struct ContentView: View {
                     }
                     .onTapGesture {
                         if isSquareOccupied(in: moves, forIndex: i) { return }
+                        moves[i] = Move(player: .human, boardIndex: i)
+                        isGameboardDisabled = true
                         
-                        moves[i] = Move(player: isHumansTurn ? .human : .AI, boardIndex: i)
-                        isHumansTurn.toggle()
+                            //Check for WIN or DRAW
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                            let AIPositon = determineAIMovePosition(in: moves)
+                            moves[AIPositon] = Move(player: .AI, boardIndex: AIPositon)
+                            isGameboardDisabled = false
+                        }
                     }
                 }
             }
         }
+        .disabled(isGameboardDisabled)
         .padding()
     }
     
@@ -51,7 +58,7 @@ struct ContentView: View {
         var movePositon = Int.random(in: 0..<9)
         
         while isSquareOccupied(in: moves, forIndex: movePositon) {
-            var movePositon = Int.random(in: 0..<9)
+            movePositon = Int.random(in: 0..<9)
         }
         
         return movePositon
