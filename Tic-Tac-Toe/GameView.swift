@@ -13,7 +13,6 @@ struct GameView: View {
     
     var body: some View {
         VStack {
-            
             LazyVGrid(columns: viewModel.columns) {
                 ForEach(0..<9) { i in
                     ZStack{
