@@ -22,6 +22,7 @@
 		F83B87F12A2FCF8A004965A0 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83B87EE2A2FCF8A004965A0 /* Poppins-Bold.ttf */; };
 		F83B87F22A2FCF8A004965A0 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83B87EF2A2FCF8A004965A0 /* Inter-SemiBold.ttf */; };
 		F83B87F32A2FCF8A004965A0 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83B87F02A2FCF8A004965A0 /* Inter-Regular.ttf */; };
+		F83B87F62A306D08004965A0 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = F83B87F52A306D08004965A0 /* RiveRuntime */; };
 		F8555B1A2A2CE94E003BB835 /* Tic_Tac_ToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8555B192A2CE94E003BB835 /* Tic_Tac_ToeApp.swift */; };
 		F8555B1C2A2CE94E003BB835 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8555B1B2A2CE94E003BB835 /* GameView.swift */; };
 		F8555B1E2A2CE94F003BB835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8555B1D2A2CE94F003BB835 /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83B87F62A306D08004965A0 /* RiveRuntime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +168,9 @@
 			dependencies = (
 			);
 			name = "Tic-Tac-Toe";
+			packageProductDependencies = (
+				F83B87F52A306D08004965A0 /* RiveRuntime */,
+			);
 			productName = "Tic-Tac-Toe";
 			productReference = F8555B162A2CE94E003BB835 /* Tic-Tac-Toe.app */;
 			productType = "com.apple.product-type.application";
@@ -194,6 +199,9 @@
 				Base,
 			);
 			mainGroup = F8555B0D2A2CE94E003BB835;
+			packageReferences = (
+				F83B87F42A306D08004965A0 /* XCRemoteSwiftPackageReference "rive-ios" */,
+			);
 			productRefGroup = F8555B172A2CE94E003BB835 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,6 +447,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F83B87F42A306D08004965A0 /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F83B87F52A306D08004965A0 /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F83B87F42A306D08004965A0 /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F8555B0E2A2CE94E003BB835 /* Project object */;
 }
