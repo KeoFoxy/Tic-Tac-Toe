@@ -11,6 +11,17 @@
 		F83B87D72A2FB419004965A0 /* GameSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B87D62A2FB419004965A0 /* GameSquareView.swift */; };
 		F83B87D92A2FB454004965A0 /* PlayerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B87D82A2FB454004965A0 /* PlayerIndicatorView.swift */; };
 		F83B87DB2A2FBE91004965A0 /* MovesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B87DA2A2FBE91004965A0 /* MovesModel.swift */; };
+		F83B87DD2A2FC0FB004965A0 /* GameLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B87DC2A2FC0FB004965A0 /* GameLogoView.swift */; };
+		F83B87E62A2FCF4D004965A0 /* button.riv in Resources */ = {isa = PBXBuildFile; fileRef = F83B87DF2A2FCF4D004965A0 /* button.riv */; };
+		F83B87E72A2FCF4D004965A0 /* house.riv in Resources */ = {isa = PBXBuildFile; fileRef = F83B87E02A2FCF4D004965A0 /* house.riv */; };
+		F83B87E82A2FCF4D004965A0 /* confetti.riv in Resources */ = {isa = PBXBuildFile; fileRef = F83B87E12A2FCF4D004965A0 /* confetti.riv */; };
+		F83B87E92A2FCF4D004965A0 /* menu_button.riv in Resources */ = {isa = PBXBuildFile; fileRef = F83B87E22A2FCF4D004965A0 /* menu_button.riv */; };
+		F83B87EA2A2FCF4D004965A0 /* check.riv in Resources */ = {isa = PBXBuildFile; fileRef = F83B87E32A2FCF4D004965A0 /* check.riv */; };
+		F83B87EB2A2FCF4D004965A0 /* icons.riv in Resources */ = {isa = PBXBuildFile; fileRef = F83B87E42A2FCF4D004965A0 /* icons.riv */; };
+		F83B87EC2A2FCF4D004965A0 /* shapes.riv in Resources */ = {isa = PBXBuildFile; fileRef = F83B87E52A2FCF4D004965A0 /* shapes.riv */; };
+		F83B87F12A2FCF8A004965A0 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83B87EE2A2FCF8A004965A0 /* Poppins-Bold.ttf */; };
+		F83B87F22A2FCF8A004965A0 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83B87EF2A2FCF8A004965A0 /* Inter-SemiBold.ttf */; };
+		F83B87F32A2FCF8A004965A0 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F83B87F02A2FCF8A004965A0 /* Inter-Regular.ttf */; };
 		F8555B1A2A2CE94E003BB835 /* Tic_Tac_ToeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8555B192A2CE94E003BB835 /* Tic_Tac_ToeApp.swift */; };
 		F8555B1C2A2CE94E003BB835 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8555B1B2A2CE94E003BB835 /* GameView.swift */; };
 		F8555B1E2A2CE94F003BB835 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8555B1D2A2CE94F003BB835 /* Assets.xcassets */; };
@@ -24,6 +35,17 @@
 		F83B87D62A2FB419004965A0 /* GameSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquareView.swift; sourceTree = "<group>"; };
 		F83B87D82A2FB454004965A0 /* PlayerIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerIndicatorView.swift; sourceTree = "<group>"; };
 		F83B87DA2A2FBE91004965A0 /* MovesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovesModel.swift; sourceTree = "<group>"; };
+		F83B87DC2A2FC0FB004965A0 /* GameLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogoView.swift; sourceTree = "<group>"; };
+		F83B87DF2A2FCF4D004965A0 /* button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = button.riv; sourceTree = "<group>"; };
+		F83B87E02A2FCF4D004965A0 /* house.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = house.riv; sourceTree = "<group>"; };
+		F83B87E12A2FCF4D004965A0 /* confetti.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = confetti.riv; sourceTree = "<group>"; };
+		F83B87E22A2FCF4D004965A0 /* menu_button.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = menu_button.riv; sourceTree = "<group>"; };
+		F83B87E32A2FCF4D004965A0 /* check.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = check.riv; sourceTree = "<group>"; };
+		F83B87E42A2FCF4D004965A0 /* icons.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = icons.riv; sourceTree = "<group>"; };
+		F83B87E52A2FCF4D004965A0 /* shapes.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = shapes.riv; sourceTree = "<group>"; };
+		F83B87EE2A2FCF8A004965A0 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		F83B87EF2A2FCF8A004965A0 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		F83B87F02A2FCF8A004965A0 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
 		F8555B162A2CE94E003BB835 /* Tic-Tac-Toe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tic-Tac-Toe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8555B192A2CE94E003BB835 /* Tic_Tac_ToeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tic_Tac_ToeApp.swift; sourceTree = "<group>"; };
 		F8555B1B2A2CE94E003BB835 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -49,8 +71,33 @@
 			children = (
 				F83B87D62A2FB419004965A0 /* GameSquareView.swift */,
 				F83B87D82A2FB454004965A0 /* PlayerIndicatorView.swift */,
+				F83B87DC2A2FC0FB004965A0 /* GameLogoView.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		F83B87DE2A2FCF2D004965A0 /* RiveAssets */ = {
+			isa = PBXGroup;
+			children = (
+				F83B87DF2A2FCF4D004965A0 /* button.riv */,
+				F83B87E32A2FCF4D004965A0 /* check.riv */,
+				F83B87E12A2FCF4D004965A0 /* confetti.riv */,
+				F83B87E02A2FCF4D004965A0 /* house.riv */,
+				F83B87E42A2FCF4D004965A0 /* icons.riv */,
+				F83B87E22A2FCF4D004965A0 /* menu_button.riv */,
+				F83B87E52A2FCF4D004965A0 /* shapes.riv */,
+			);
+			path = RiveAssets;
+			sourceTree = "<group>";
+		};
+		F83B87ED2A2FCF70004965A0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F83B87F02A2FCF8A004965A0 /* Inter-Regular.ttf */,
+				F83B87EF2A2FCF8A004965A0 /* Inter-SemiBold.ttf */,
+				F83B87EE2A2FCF8A004965A0 /* Poppins-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		F8555B0D2A2CE94E003BB835 = {
@@ -72,6 +119,8 @@
 		F8555B182A2CE94E003BB835 /* Tic-Tac-Toe */ = {
 			isa = PBXGroup;
 			children = (
+				F83B87ED2A2FCF70004965A0 /* Fonts */,
+				F83B87DE2A2FCF2D004965A0 /* RiveAssets */,
 				F83B87D52A2FB3DF004965A0 /* CustomViews */,
 				F8555B272A2CF9E5003BB835 /* Tools */,
 				F8555B192A2CE94E003BB835 /* Tic_Tac_ToeApp.swift */,
@@ -159,8 +208,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F83B87E72A2FCF4D004965A0 /* house.riv in Resources */,
+				F83B87E62A2FCF4D004965A0 /* button.riv in Resources */,
+				F83B87E92A2FCF4D004965A0 /* menu_button.riv in Resources */,
+				F83B87F22A2FCF8A004965A0 /* Inter-SemiBold.ttf in Resources */,
 				F8555B212A2CE94F003BB835 /* Preview Assets.xcassets in Resources */,
+				F83B87EC2A2FCF4D004965A0 /* shapes.riv in Resources */,
+				F83B87EB2A2FCF4D004965A0 /* icons.riv in Resources */,
 				F8555B1E2A2CE94F003BB835 /* Assets.xcassets in Resources */,
+				F83B87F12A2FCF8A004965A0 /* Poppins-Bold.ttf in Resources */,
+				F83B87EA2A2FCF4D004965A0 /* check.riv in Resources */,
+				F83B87F32A2FCF8A004965A0 /* Inter-Regular.ttf in Resources */,
+				F83B87E82A2FCF4D004965A0 /* confetti.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8555B1C2A2CE94E003BB835 /* GameView.swift in Sources */,
+				F83B87DD2A2FC0FB004965A0 /* GameLogoView.swift in Sources */,
 				F83B87D92A2FB454004965A0 /* PlayerIndicatorView.swift in Sources */,
 				F8555B292A2CF9F9003BB835 /* Colors.swift in Sources */,
 				F886A5B42A2F7A1D00067F90 /* Alerts.swift in Sources */,
