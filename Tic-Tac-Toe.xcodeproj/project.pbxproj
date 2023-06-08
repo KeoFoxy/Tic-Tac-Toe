@@ -33,6 +33,8 @@
 		F8EDB29F2A311A12007247D5 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB29E2A311A12007247D5 /* CustomFont.swift */; };
 		F8EDB2A42A311DE4007247D5 /* Comic-Sans-MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EDB2A32A311DE4007247D5 /* Comic-Sans-MS.ttf */; };
 		F8EDB2A72A31F5D0007247D5 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2A62A31F5D0007247D5 /* GameModel.swift */; };
+		F8EDB2A92A31FDAE007247D5 /* ControlButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2A82A31FDAE007247D5 /* ControlButtonsModel.swift */; };
+		F8EDB2AD2A324EE7007247D5 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2AC2A324EE7007247D5 /* ScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		F8EDB2A22A311D89007247D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F8EDB2A32A311DE4007247D5 /* Comic-Sans-MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic-Sans-MS.ttf"; sourceTree = "<group>"; };
 		F8EDB2A62A31F5D0007247D5 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		F8EDB2A82A31FDAE007247D5 /* ControlButtonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonsModel.swift; sourceTree = "<group>"; };
+		F8EDB2AC2A324EE7007247D5 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				F83B87DC2A2FC0FB004965A0 /* GameLogoView.swift */,
 				F8EDB29A2A31059B007247D5 /* BackgroundView.swift */,
 				F8EDB29C2A311853007247D5 /* ControlButtonsView.swift */,
+				F8EDB2AC2A324EE7007247D5 /* ScoreView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -136,8 +141,8 @@
 				F8EDB2A22A311D89007247D5 /* Info.plist */,
 				F83B87ED2A2FCF70004965A0 /* Fonts */,
 				F83B87DE2A2FCF2D004965A0 /* RiveAssets */,
-				F83B87D52A2FB3DF004965A0 /* CustomViews */,
 				F8555B272A2CF9E5003BB835 /* Tools */,
+				F83B87D52A2FB3DF004965A0 /* CustomViews */,
 				F8EDB2A52A31F5B4007247D5 /* Models */,
 				F8555B192A2CE94E003BB835 /* Tic_Tac_ToeApp.swift */,
 				F8555B1B2A2CE94E003BB835 /* GameView.swift */,
@@ -170,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				F8EDB2A62A31F5D0007247D5 /* GameModel.swift */,
+				F8EDB2A82A31FDAE007247D5 /* ControlButtonsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 				F8EDB29B2A31059B007247D5 /* BackgroundView.swift in Sources */,
 				F8555B1C2A2CE94E003BB835 /* GameView.swift in Sources */,
 				F83B87DD2A2FC0FB004965A0 /* GameLogoView.swift in Sources */,
+				F8EDB2A92A31FDAE007247D5 /* ControlButtonsModel.swift in Sources */,
 				F83B87D92A2FB454004965A0 /* PlayerIndicatorView.swift in Sources */,
 				F8555B292A2CF9F9003BB835 /* Colors.swift in Sources */,
 				F8EDB2A72A31F5D0007247D5 /* GameModel.swift in Sources */,
@@ -271,6 +278,7 @@
 				F83B87D72A2FB419004965A0 /* GameSquareView.swift in Sources */,
 				F83B87D42A2FAC47004965A0 /* GameViewModel.swift in Sources */,
 				F8EDB29D2A311853007247D5 /* ControlButtonsView.swift in Sources */,
+				F8EDB2AD2A324EE7007247D5 /* ScoreView.swift in Sources */,
 				F8EDB29F2A311A12007247D5 /* CustomFont.swift in Sources */,
 				F8555B1A2A2CE94E003BB835 /* Tic_Tac_ToeApp.swift in Sources */,
 			);
