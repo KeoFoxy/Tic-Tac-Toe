@@ -15,6 +15,11 @@ struct GameSquareView: View {
             .foregroundColor(.clear)
             .background(FieldBackground)
             .cornerRadius(10)
+//            .background(
+//                RoundedRectangle(cornerRadius: 10)
+//                    .stroke(Color.white, lineWidth: 10)
+//                    .opacity(0.25)
+//            )
     }
 }
 
