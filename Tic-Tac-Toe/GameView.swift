@@ -12,26 +12,32 @@ struct GameView: View {
     @StateObject private var viewModel = GameViewModel()
     
     var body: some View {
-        VStack {
-            LazyVGrid(columns: viewModel.columns) {
-                ForEach(0..<9) { i in
-                    ZStack{
-                        GameSquareView()
-                        PlayerIndicator(SystemImageName: viewModel.moves[i]?.indicator ?? "")
-                    }
-                    .onTapGesture {
-                        viewModel.processPlayerMove(for: i)
+        ZStack {
+            BackgroundView()
+            VStack {
+                Spacer()
+                LazyVGrid(columns: viewModel.columns) {
+                    ForEach(0..<9) { i in
+                        ZStack{
+                            GameSquareView()
+                            PlayerIndicator(SystemImageName: viewModel.moves[i]?.indicator ?? "")
+                        }
+                        .onTapGesture {
+                            viewModel.processPlayerMove(for: i)
+                        }
                     }
                 }
+                Spacer()
+                ControlButtonsView()
             }
+            .disabled(viewModel.isGameboardDisabled)
+            .padding()
+            .alert(item: $viewModel.alertItem, content: { alertItem in
+                Alert(title: alertItem.title,
+                      message: alertItem.message,
+                      dismissButton: .default(alertItem.buttonTitle, action: { viewModel.resetGame() }))
+            })
         }
-        .disabled(viewModel.isGameboardDisabled)
-        .padding()
-        .alert(item: $viewModel.alertItem, content: { alertItem in
-            Alert(title: alertItem.title,
-                  message: alertItem.message,
-                  dismissButton: .default(alertItem.buttonTitle, action: { viewModel.resetGame() }))
-        })
     }
 }
 
