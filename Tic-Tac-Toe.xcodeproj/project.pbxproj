@@ -29,6 +29,10 @@
 		F8555B212A2CE94F003BB835 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8555B202A2CE94F003BB835 /* Preview Assets.xcassets */; };
 		F8555B292A2CF9F9003BB835 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8555B282A2CF9F9003BB835 /* Colors.swift */; };
 		F886A5B42A2F7A1D00067F90 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886A5B32A2F7A1D00067F90 /* Alerts.swift */; };
+		F8EDB29B2A31059B007247D5 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB29A2A31059B007247D5 /* BackgroundView.swift */; };
+		F8EDB29D2A311853007247D5 /* ControlButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB29C2A311853007247D5 /* ControlButtonsView.swift */; };
+		F8EDB29F2A311A12007247D5 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB29E2A311A12007247D5 /* CustomFont.swift */; };
+		F8EDB2A42A311DE4007247D5 /* Comic-Sans-MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EDB2A32A311DE4007247D5 /* Comic-Sans-MS.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +58,11 @@
 		F8555B202A2CE94F003BB835 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8555B282A2CF9F9003BB835 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		F886A5B32A2F7A1D00067F90 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		F8EDB29A2A31059B007247D5 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		F8EDB29C2A311853007247D5 /* ControlButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonsView.swift; sourceTree = "<group>"; };
+		F8EDB29E2A311A12007247D5 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		F8EDB2A22A311D89007247D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F8EDB2A32A311DE4007247D5 /* Comic-Sans-MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic-Sans-MS.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,8 @@
 				F83B87D62A2FB419004965A0 /* GameSquareView.swift */,
 				F83B87D82A2FB454004965A0 /* PlayerIndicatorView.swift */,
 				F83B87DC2A2FC0FB004965A0 /* GameLogoView.swift */,
+				F8EDB29A2A31059B007247D5 /* BackgroundView.swift */,
+				F8EDB29C2A311853007247D5 /* ControlButtonsView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -95,6 +106,7 @@
 		F83B87ED2A2FCF70004965A0 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				F8EDB2A32A311DE4007247D5 /* Comic-Sans-MS.ttf */,
 				F83B87F02A2FCF8A004965A0 /* Inter-Regular.ttf */,
 				F83B87EF2A2FCF8A004965A0 /* Inter-SemiBold.ttf */,
 				F83B87EE2A2FCF8A004965A0 /* Poppins-Bold.ttf */,
@@ -121,6 +133,7 @@
 		F8555B182A2CE94E003BB835 /* Tic-Tac-Toe */ = {
 			isa = PBXGroup;
 			children = (
+				F8EDB2A22A311D89007247D5 /* Info.plist */,
 				F83B87ED2A2FCF70004965A0 /* Fonts */,
 				F83B87DE2A2FCF2D004965A0 /* RiveAssets */,
 				F83B87D52A2FB3DF004965A0 /* CustomViews */,
@@ -148,6 +161,7 @@
 				F8555B282A2CF9F9003BB835 /* Colors.swift */,
 				F886A5B32A2F7A1D00067F90 /* Alerts.swift */,
 				F83B87DA2A2FBE91004965A0 /* MovesModel.swift */,
+				F8EDB29E2A311A12007247D5 /* CustomFont.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -225,6 +239,7 @@
 				F83B87EB2A2FCF4D004965A0 /* icons.riv in Resources */,
 				F8555B1E2A2CE94F003BB835 /* Assets.xcassets in Resources */,
 				F83B87F12A2FCF8A004965A0 /* Poppins-Bold.ttf in Resources */,
+				F8EDB2A42A311DE4007247D5 /* Comic-Sans-MS.ttf in Resources */,
 				F83B87EA2A2FCF4D004965A0 /* check.riv in Resources */,
 				F83B87F32A2FCF8A004965A0 /* Inter-Regular.ttf in Resources */,
 				F83B87E82A2FCF4D004965A0 /* confetti.riv in Resources */,
@@ -238,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8EDB29B2A31059B007247D5 /* BackgroundView.swift in Sources */,
 				F8555B1C2A2CE94E003BB835 /* GameView.swift in Sources */,
 				F83B87DD2A2FC0FB004965A0 /* GameLogoView.swift in Sources */,
 				F83B87D92A2FB454004965A0 /* PlayerIndicatorView.swift in Sources */,
@@ -245,6 +261,8 @@
 				F886A5B42A2F7A1D00067F90 /* Alerts.swift in Sources */,
 				F83B87D72A2FB419004965A0 /* GameSquareView.swift in Sources */,
 				F83B87D42A2FAC47004965A0 /* GameViewModel.swift in Sources */,
+				F8EDB29D2A311853007247D5 /* ControlButtonsView.swift in Sources */,
+				F8EDB29F2A311A12007247D5 /* CustomFont.swift in Sources */,
 				F83B87DB2A2FBE91004965A0 /* MovesModel.swift in Sources */,
 				F8555B1A2A2CE94E003BB835 /* Tic_Tac_ToeApp.swift in Sources */,
 			);
@@ -378,6 +396,7 @@
 				DEVELOPMENT_TEAM = 4RVQ5686Z7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tic-Tac-Toe/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -407,6 +426,7 @@
 				DEVELOPMENT_TEAM = 4RVQ5686Z7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tic-Tac-Toe/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
