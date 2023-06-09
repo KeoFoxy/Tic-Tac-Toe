@@ -9,30 +9,29 @@ import SwiftUI
 import RiveRuntime
 
 struct ControlButtonsView: View {
+    @ObservedObject var controlButtonsModel: ControlButtonsModel
 
     var body: some View {
         HStack(spacing: 10) {
-//            CustomButton(title: "Start",
-//                         systemImage: "play.square",
-//                         button: RiveViewModel(fileName: "button", autoPlay: false)
-//            )
             CustomButton(title: "Reset Score",
                          systemImage: "eraser.fill",
-                         button: RiveViewModel(fileName: "button", autoPlay: false))
+                         button: RiveViewModel(fileName: "button", autoPlay: false),
+                         controlButtonsModel: controlButtonsModel)
         }
     }
 }
 
-struct ControlButtonsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ControlButtonsView()
-    }
-}
+//struct ControlButtonsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ControlButtonsView()
+//    }
+//}
 
 struct CustomButton: View {
     var title: String
     var systemImage: String
     var button: RiveViewModel
+    var controlButtonsModel: ControlButtonsModel
     
     var body: some View {
         button.view()
@@ -51,6 +50,8 @@ struct CustomButton: View {
                 
             )
             .onTapGesture {
+                //controlButtonsModel.resetScore()
+                ScoreViewModel.shared.resetScore()
                 button.play(animationName: "active")
                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
                     withAnimation(.spring()){
