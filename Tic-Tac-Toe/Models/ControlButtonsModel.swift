@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
-import Combine
 
 final class ControlButtonsModel: ObservableObject {
-    var isGameStarted: Bool = false
+    var scoreViewModel: ScoreViewModel
     
-    func StartGame() -> Bool {
-        return true
+    init(scoreViewModel: ScoreViewModel) {
+        self.scoreViewModel = scoreViewModel
+    }
+    
+    func resetScore() {
+        scoreViewModel.resetScore()
     }
 }
