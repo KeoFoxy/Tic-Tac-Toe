@@ -30,12 +30,12 @@
 		F886A5B42A2F7A1D00067F90 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886A5B32A2F7A1D00067F90 /* Alerts.swift */; };
 		F8EDB29B2A31059B007247D5 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB29A2A31059B007247D5 /* BackgroundView.swift */; };
 		F8EDB29D2A311853007247D5 /* ControlButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB29C2A311853007247D5 /* ControlButtonsView.swift */; };
-		F8EDB29F2A311A12007247D5 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB29E2A311A12007247D5 /* CustomFont.swift */; };
 		F8EDB2A42A311DE4007247D5 /* Comic-Sans-MS.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8EDB2A32A311DE4007247D5 /* Comic-Sans-MS.ttf */; };
 		F8EDB2A72A31F5D0007247D5 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2A62A31F5D0007247D5 /* GameModel.swift */; };
 		F8EDB2A92A31FDAE007247D5 /* ControlButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2A82A31FDAE007247D5 /* ControlButtonsModel.swift */; };
 		F8EDB2AD2A324EE7007247D5 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2AC2A324EE7007247D5 /* ScoreView.swift */; };
 		F8EDB2AF2A324F6B007247D5 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2AE2A324F6B007247D5 /* ScoreViewModel.swift */; };
+		F8EDB2B12A335EC4007247D5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2B02A335EC4007247D5 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,13 +62,13 @@
 		F886A5B32A2F7A1D00067F90 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		F8EDB29A2A31059B007247D5 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		F8EDB29C2A311853007247D5 /* ControlButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonsView.swift; sourceTree = "<group>"; };
-		F8EDB29E2A311A12007247D5 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		F8EDB2A22A311D89007247D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F8EDB2A32A311DE4007247D5 /* Comic-Sans-MS.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic-Sans-MS.ttf"; sourceTree = "<group>"; };
 		F8EDB2A62A31F5D0007247D5 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		F8EDB2A82A31FDAE007247D5 /* ControlButtonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonsModel.swift; sourceTree = "<group>"; };
 		F8EDB2AC2A324EE7007247D5 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		F8EDB2AE2A324F6B007247D5 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
+		F8EDB2B02A335EC4007247D5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +168,7 @@
 			children = (
 				F8555B282A2CF9F9003BB835 /* Colors.swift */,
 				F886A5B32A2F7A1D00067F90 /* Alerts.swift */,
-				F8EDB29E2A311A12007247D5 /* CustomFont.swift */,
+				F8EDB2B02A335EC4007247D5 /* Extensions.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -281,9 +281,9 @@
 				F886A5B42A2F7A1D00067F90 /* Alerts.swift in Sources */,
 				F83B87D72A2FB419004965A0 /* GameSquareView.swift in Sources */,
 				F83B87D42A2FAC47004965A0 /* GameViewModel.swift in Sources */,
+				F8EDB2B12A335EC4007247D5 /* Extensions.swift in Sources */,
 				F8EDB29D2A311853007247D5 /* ControlButtonsView.swift in Sources */,
 				F8EDB2AD2A324EE7007247D5 /* ScoreView.swift in Sources */,
-				F8EDB29F2A311A12007247D5 /* CustomFont.swift in Sources */,
 				F8555B1A2A2CE94E003BB835 /* Tic_Tac_ToeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
