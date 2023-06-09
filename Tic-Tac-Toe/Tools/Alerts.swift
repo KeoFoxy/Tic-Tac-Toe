@@ -19,12 +19,12 @@ struct AlertContext {
                                     message: Text("Congratulations!"),
                                     buttonTitle: Text("Ok"))
     
-    static let AIWin       = AlertItem(title: Text("You lost"),
+    static let AIWin    = AlertItem(title: Text("You lost"),
                                     message: Text("Not today!"),
                                     buttonTitle: Text("Ok"))
     
     static let draw     = AlertItem(title: Text("Draw"),
-                                    message: Text("Play onew more!"),
+                                    message: Text("Play one more!"),
                                     buttonTitle: Text("Ok"))
     
 }
