@@ -35,6 +35,7 @@
 		F8EDB2A72A31F5D0007247D5 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2A62A31F5D0007247D5 /* GameModel.swift */; };
 		F8EDB2A92A31FDAE007247D5 /* ControlButtonsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2A82A31FDAE007247D5 /* ControlButtonsModel.swift */; };
 		F8EDB2AD2A324EE7007247D5 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2AC2A324EE7007247D5 /* ScoreView.swift */; };
+		F8EDB2AF2A324F6B007247D5 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EDB2AE2A324F6B007247D5 /* ScoreViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		F8EDB2A62A31F5D0007247D5 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		F8EDB2A82A31FDAE007247D5 /* ControlButtonsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonsModel.swift; sourceTree = "<group>"; };
 		F8EDB2AC2A324EE7007247D5 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		F8EDB2AE2A324F6B007247D5 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 			children = (
 				F8EDB2A62A31F5D0007247D5 /* GameModel.swift */,
 				F8EDB2A82A31FDAE007247D5 /* ControlButtonsModel.swift */,
+				F8EDB2AE2A324F6B007247D5 /* ScoreViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				F8EDB2A92A31FDAE007247D5 /* ControlButtonsModel.swift in Sources */,
 				F83B87D92A2FB454004965A0 /* PlayerIndicatorView.swift in Sources */,
 				F8555B292A2CF9F9003BB835 /* Colors.swift in Sources */,
+				F8EDB2AF2A324F6B007247D5 /* ScoreViewModel.swift in Sources */,
 				F8EDB2A72A31F5D0007247D5 /* GameModel.swift in Sources */,
 				F886A5B42A2F7A1D00067F90 /* Alerts.swift in Sources */,
 				F83B87D72A2FB419004965A0 /* GameSquareView.swift in Sources */,
