@@ -25,11 +25,13 @@ final class GameViewModel: ObservableObject {
         
         //Check for WIN or DRAW
         if checkWinCondition(for: .human, in: moves) {
+            ScoreViewModel.shared.increseWinScore()
             alertItem = AlertContext.humanWin
             return
         }
         
         if checkDrawCondition(in: moves) {
+            ScoreViewModel.shared.increseDrawScore()
             alertItem = AlertContext.draw
             return
         }
@@ -43,11 +45,13 @@ final class GameViewModel: ObservableObject {
             isGameboardDisabled = false
             
             if checkWinCondition(for: .AI, in: moves) {
+                ScoreViewModel.shared.increseLoseScore()
                 alertItem = AlertContext.AIWin
                 return
             }
             
             if checkDrawCondition(in: moves) {
+                ScoreViewModel.shared.increseDrawScore()
                 alertItem = AlertContext.draw
                 return
             }
