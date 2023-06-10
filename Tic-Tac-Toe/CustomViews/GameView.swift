@@ -9,21 +9,12 @@ import SwiftUI
 
 struct GameView: View {
     @StateObject private var viewModel = GameViewModel()
-    @StateObject private var resetButtonViewModel: ControlButtonsModel
-    
-    init() {
-        let scoreViewModel = ScoreViewModel()
-        let controlButtonsModel = ControlButtonsModel(scoreViewModel: scoreViewModel)
-        _resetButtonViewModel = StateObject(wrappedValue: controlButtonsModel)
-    }
     
     var body: some View {
         ZStack {
             BackgroundView()
             VStack {
-//                ScoreView(viewModel: resetButtonViewModel.scoreViewModel)
                 ScoreView(viewModel: ScoreViewModel.shared)
-//                ScoreView(viewModel: scoreViewModel)
                 Spacer()
                 LazyVGrid(columns: viewModel.columns) {
                     ForEach(0..<9) { i in
@@ -37,8 +28,7 @@ struct GameView: View {
                     }
                 }
                 Spacer()
-                ControlButtonsView(controlButtonsModel: resetButtonViewModel)
-//                ControlButtonsView(viewModel: controlButtonsModel)
+                ControlButtonsView()
             }
             .disabled(viewModel.isGameboardDisabled)
             .padding()
