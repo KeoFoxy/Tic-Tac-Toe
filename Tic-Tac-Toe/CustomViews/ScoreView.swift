@@ -25,23 +25,29 @@ struct ScoreView: View {
         VStack(alignment: .leading, spacing: 5) {
             HStack {
                 Text("Wins:")
+                    .foregroundColor(.black)
                     .font(.custom("Poppins Bold", size: 24, relativeTo: .title))
                 Spacer()
                 Text("\(viewModel.wins)")
+                    .foregroundColor(.black)
                     .font(.custom("Poppins Bold", size: 24, relativeTo: .title))
             }
             HStack {
                 Text("Losses:")
+                    .foregroundColor(.black)
                     .font(.custom("Poppins Bold", size: 24, relativeTo: .title))
                 Spacer()
                 Text("\(viewModel.losses)")
+                    .foregroundColor(.black)
                     .font(.custom("Poppins Bold", size: 24, relativeTo: .title))
             }
             HStack {
                 Text("Draws:")
+                    .foregroundColor(.black)
                     .font(.custom("Poppins Bold", size: 24, relativeTo: .title))
                 Spacer()
                 Text("\(viewModel.draws)")
+                    .foregroundColor(.black)
                     .font(.custom("Poppins Bold", size: 24, relativeTo: .title))
             }
         }
