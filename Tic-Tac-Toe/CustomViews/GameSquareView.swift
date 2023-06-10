@@ -13,13 +13,8 @@ struct GameSquareView: View {
         Rectangle()
             .aspectRatio(1, contentMode: .fit)
             .foregroundColor(.clear)
-            .background(FieldBackground)
+            .background(daySky)
             .cornerRadius(10)
-//            .background(
-//                RoundedRectangle(cornerRadius: 10)
-//                    .stroke(Color.white, lineWidth: 10)
-//                    .opacity(0.25)
-//            )
     }
 }
 
