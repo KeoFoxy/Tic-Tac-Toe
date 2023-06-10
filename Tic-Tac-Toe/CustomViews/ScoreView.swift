@@ -6,20 +6,16 @@
 //
 
 import SwiftUI
+import RiveRuntime
 
 struct ScoreView: View {
-        //    @ObservedObject var viewModel: ScoreViewModel.shared
     @StateObject var viewModel = ScoreViewModel.shared
+    let ScoreField = RiveViewModel(fileName: "score", autoPlay: false)
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 15)
-                .stroke(Color.pink, lineWidth: 1)
-                .frame(width: 250, height: 200)
-                .foregroundColor(.clear)
-                .background(.white) //add cool gradiend
-                .blur(radius: 5)
-                .cornerRadius(10)
+            ScoreField.view()
+                .frame(width: 275, height: 200)
             Score
                 .frame(width: 150)
         }
