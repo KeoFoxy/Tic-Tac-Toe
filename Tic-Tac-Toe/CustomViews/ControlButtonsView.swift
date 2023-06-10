@@ -36,6 +36,7 @@ struct ResetButton: View {
             .overlay(
             Label(title, systemImage: systemImage)
                 .offset(x: 4, y: 4)
+                .foregroundColor(.black)
                 .font(.custom("Poppins Bold", size: 20, relativeTo: .title))
             )
             .onTapGesture {
