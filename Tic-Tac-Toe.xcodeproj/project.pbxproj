@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F803C5D82A3486AE0025BA12 /* score.riv in Resources */ = {isa = PBXBuildFile; fileRef = F803C5D72A3486AE0025BA12 /* score.riv */; };
+		F81188AE2A34F6F2009DC1AE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81188AD2A34F6F2009DC1AE /* SettingsView.swift */; };
 		F83B87D42A2FAC47004965A0 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B87D32A2FAC47004965A0 /* GameViewModel.swift */; };
 		F83B87D72A2FB419004965A0 /* GameSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B87D62A2FB419004965A0 /* GameSquareView.swift */; };
 		F83B87D92A2FB454004965A0 /* PlayerIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83B87D82A2FB454004965A0 /* PlayerIndicatorView.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		F803C5D72A3486AE0025BA12 /* score.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = score.riv; sourceTree = "<group>"; };
+		F81188AD2A34F6F2009DC1AE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F83B87D32A2FAC47004965A0 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
 		F83B87D62A2FB419004965A0 /* GameSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSquareView.swift; sourceTree = "<group>"; };
 		F83B87D82A2FB454004965A0 /* PlayerIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerIndicatorView.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				F8EDB29C2A311853007247D5 /* ControlButtonsView.swift */,
 				F8EDB2AC2A324EE7007247D5 /* ScoreView.swift */,
 				F8555B1B2A2CE94E003BB835 /* GameView.swift */,
+				F81188AD2A34F6F2009DC1AE /* SettingsView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -110,7 +113,7 @@
 		F8555B0D2A2CE94E003BB835 = {
 			isa = PBXGroup;
 			children = (
-				F8555B182A2CE94E003BB835 /* Tic-Tac-Toe */,
+				F8555B182A2CE94E003BB835 /*  */,
 				F8555B172A2CE94E003BB835 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -123,7 +126,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F8555B182A2CE94E003BB835 /* Tic-Tac-Toe */ = {
+		F8555B182A2CE94E003BB835 /*  */ = {
 			isa = PBXGroup;
 			children = (
 				F8EDB2A22A311D89007247D5 /* Info.plist */,
@@ -137,7 +140,7 @@
 				F8555B1D2A2CE94F003BB835 /* Assets.xcassets */,
 				F8555B1F2A2CE94F003BB835 /* Preview Content */,
 			);
-			path = "Tic-Tac-Toe";
+			name = "";
 			sourceTree = "<group>";
 		};
 		F8555B1F2A2CE94F003BB835 /* Preview Content */ = {
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81188AE2A34F6F2009DC1AE /* SettingsView.swift in Sources */,
 				F8EDB29B2A31059B007247D5 /* BackgroundView.swift in Sources */,
 				F8555B1C2A2CE94E003BB835 /* GameView.swift in Sources */,
 				F8EDB2A92A31FDAE007247D5 /* ControlButtonsModel.swift in Sources */,
@@ -400,11 +404,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Tic-Tac-Toe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 4RVQ5686Z7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tic-Tac-Toe/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -430,11 +434,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Tic-Tac-Toe/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 4RVQ5686Z7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tic-Tac-Toe/Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
