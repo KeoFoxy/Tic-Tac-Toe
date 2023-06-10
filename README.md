@@ -30,7 +30,7 @@ This beautiful Tic-Tac-Toe application is developed using Swift, SwiftUI and MVV
 1. Clone the Tic Tac Toe repository:
 
    ```shell
-   git clone https://github.com/your_username/tic-tac-toe.
+   git clone git@github.com:KeoFoxy/Tic-Tac-Toe.git
    ```
 2. Open the `Tic-Tac-Toe.xcodeproj` project in Xcode.
 3. Build and run the project on a simulator or a real device.
