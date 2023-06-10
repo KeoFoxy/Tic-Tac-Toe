@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-    // Colors
+// Colors
 let lightBlue:Color = Color(hex: "#AEE4FF")
 let oceanBlue: Color = Color(hex: "#ADC0FF")
 let daskBlue: Color = Color(hex: "#6A9CFD")
@@ -40,20 +40,19 @@ let daySky = LinearGradient(colors: [daskBlue, lightBlue],
 let dawnSky = LinearGradient(colors: [.black, .gray],
                                               startPoint: .top,
                                               endPoint: .bottom)
-
+let ScoreBackGround = LinearGradient(colors: [.white ,MoonLight, SkyBlue, .white],
+                                              startPoint: .topLeading,
+                                              endPoint: .bottomTrailing)
 
 let FieldBackground = LinearGradient(colors: [PaleYellow, PeachOrange], 
                                               startPoint: .topLeading, 
                                               endPoint: .bottomTrailing)
 
-var AngGradietn: some View {
-    AngularGradient(gradient: Gradient(colors: [ customRedColor, customMagentaColor, customCyanColor, customYellowColor, customRedColor ]), 
+let AngGradient = AngularGradient(gradient: Gradient(colors: [ customRedColor, customMagentaColor, customCyanColor,                                                    customYellowColor, customRedColor ]),
                                               center: .center, 
-                                              angle: .degrees(120)).ignoresSafeArea()
-}
+                                              angle: .degrees(120))
 
-var LinGradient: some View {
-    LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0), Color.white.opacity(1)]), 
+let LinGradient = LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0), Color.white.opacity(1)]),
                                               startPoint: .bottom, 
-                                              endPoint: .top).ignoresSafeArea()
-}
+                                              endPoint: .top)
+
