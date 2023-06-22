@@ -11,12 +11,16 @@ import RiveRuntime
 struct BackgroundView: View {
     var body: some View {
         ZStack {
-            Color(.white)
-                .ignoresSafeArea()
-
+            Image("Spline")
+                .blur(radius: 50)
+                .offset(x: 200, y: 100)
+                .frame(maxWidth: 200, maxHeight: .infinity)
+            
             RiveViewModel(fileName: "shapes").view()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .ignoresSafeArea()
-                .blur(radius: 10)
+                .blur(radius: 30)
+                .blendMode(.hardLight)
         }
     }
 }
